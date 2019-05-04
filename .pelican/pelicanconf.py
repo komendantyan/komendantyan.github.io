@@ -13,12 +13,15 @@ PLUGINS = ['i18n_subsites']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_TEMPLATES_LANG = 'en'
 DEFAULT_LANG = 'ru'
-LOCALE = 'ru_RU'
+LOCALE = 'ru_RU.UTF-8'
 
 PATH = 'content'
+OUTPUT_PATH = '..'
+
+DELETE_OUTPUT_DIRECTORY = True,
+OUTPUT_RETENTION: ['.git', '.pelican']
 
 TIMEZONE = 'Europe/Moscow'
-
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
